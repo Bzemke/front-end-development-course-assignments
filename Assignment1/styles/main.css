@@ -6,6 +6,44 @@ li{
 }
 
 body{
-    margin:20px auto;
-    width:960px;
+    margin:50px;
+    width:980px;
+    font-family: "Palatino Linotype", "Book Antigua", Palatino, serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 1200px;
+}
+
+th{
+  text-align: center;
+  height: 30px;
+  background-color: #000000;
+  color: white;
+}
+
+table,td{
+  border: 1px solid black;
+}
+
+td,th{
+  padding: 10px;
+}
+
+tr:nth-child(even){
+  background-color: #A9A9A9;
+}
+
+h1{
+  text-align: center;
+  color: #0000FF;
+}
+
+h2{
+  color: #8A2BE2;
+}
+
+h3{
+  color: #FF0000;
 }
