@@ -1,6 +1,6 @@
 # Assignment 5
-In this assignment we are going to work on decendant selectors and some of the newer CSS properties we have learned.
-You'll do all of your work inside of the /styles/main.css file 
+In this assignment we are going to work on descendant selectors and some of the newer CSS properties we have learned.
+You'll do all of your work inside of the /styles/main.css file
 
 ## Part 1 - Main Layout
 
@@ -8,9 +8,9 @@ You'll do all of your work inside of the /styles/main.css file
   - Background color = `#e9e9e9`
   - Font Family = `Arial, Helvetica, sans-serif`
 - The class `main-content` should have the following styles
-  - Background color = `#ffffff` 
+  - Background color = `#ffffff`
   - Margin Top and Bottom  = `20px`
-  - Marging Left and Right = The value that centers content
+  - Merging Left and Right = The value that centers content
   - Width = `960px`
 
 ## Part 2 - Header
@@ -27,7 +27,7 @@ You'll do all of your work inside of the /styles/main.css file
 - Class `navigation` should have the following properties
   - background gradient = Vertical and goes from #1e5799 to #7db9e8  
   - padding = `10px;`
-- All hyperlinks in `navigation` 
+- All hyperlinks in `navigation`
   - color = `#ffffff`
   - font-size = `22px`
   - font-weight = `bold`
