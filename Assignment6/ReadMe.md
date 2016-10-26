@@ -8,7 +8,7 @@ Assignment 6 is going to open up the opportunity to develop your own CSS style. 
 - Turquoise - `#00aaaa`
 - Drop and Text Shadows - `#000000`
 
-## Rough Diminsions 
+## Rough Dimensions
 - Body - 960px;
 - Header - 128px
 - Side Bar - 25%
