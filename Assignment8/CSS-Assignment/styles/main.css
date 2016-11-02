@@ -6,6 +6,8 @@ body{
   margin: 0;
 }
 
+.content
+
 h1{
   font-size: 1.5em;
   font-weight: bold;
@@ -25,8 +27,25 @@ h1{
   width: 25%;
 }
 
+.images img:hover{
+  border: 1px solid black;
+  margin: -1px;
+}
+
+.images img:hover h3{
+  text-decoration: underline;
+}
+
+.image_text:hover{
+  text-decoration: underline;
+}
+
 .nav_one{
   background-color: #a00;
+}
+
+.nav_one li:hover, .nav_two li:hover{
+  text-decoration: underline;
 }
 
 .nav_one li, .nav_two li{
