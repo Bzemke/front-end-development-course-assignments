@@ -8,13 +8,13 @@ Use Chrome's developer tools to get the information you need to recreate.  Try t
 ### Bonus challenge
 
 - Import a font of your choice from Google's Font library
-- Add CSS Media query to display the content like the picture found here [here](CSS-Assignment/final-optional.png). Make the break point around 600 pixels. 
+- Add CSS Media query to display the content like the picture found here [here](CSS-Assignment/final-optional.png). Make the break point around 600 pixels.
 
 ## JavaScript
 
-Perform the following tasks in index.html in the JS-Assignment Folder. 
+Perform the following tasks in index.html in the JS-Assignment Folder.
 
-- Add a inline script tag and perform the following tasks
+- Add an inline script tag and perform the following tasks
   - Create a variable that represents your name and populate it with your name.
   - Create a variable that represents an integer and populate it with a number between 1 and 100.
   - Create a variable that represents an boolean and populate it with a valid boolean value.

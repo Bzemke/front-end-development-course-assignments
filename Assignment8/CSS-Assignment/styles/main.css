@@ -1,3 +1,49 @@
 * {
     box-sizing:border-box;
 }
+
+body{
+  margin: 0;
+}
+
+h1{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 960px;
+}
+
+.images{
+  margin: auto;
+  width: 960px;
+}
+
+.images li{
+  display: inline-block;
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+.nav_one{
+  background-color: #a00;
+}
+
+.nav_one li, .nav_two li{
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  list-style: none;
+  padding: 20px 10px;
+}
+
+.nav_one ul, .nav_two ul{
+  margin: 0;
+  text-align: center;
+  width: 960px;
+}
+
+.nav_two{
+  clear: both;
+  background-color: black;
+}
