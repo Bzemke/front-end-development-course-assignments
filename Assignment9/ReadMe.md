@@ -4,11 +4,11 @@ All parts of this assignment have corresponding sections inside of the html and 
 ## Part 1 - Variable Declaration
 Perform the following tasks
 - Create a variable that represents your name and populate it with your name.
-- Retreive the element with the ID of `partOne` and populate its innerHTML with the variable
+- Retrieve the element with the ID of `partOne` and populate its innerHTML with the variable
 
 ## Part 2 - Overwritting Variables
 Perform the following tasks.
-- Using a new block of code, overide the current value of the varialbe `foo` to say "This is not an integer"
+- Using a new block of code, override the current value of the variable `foo` to say "This is not an integer"
 - Retrieve the element with the ID of `partTwo` and populate its  innerHTML with the variable `foo`
 
 ## Part 3 - Basic Arithmetic
@@ -20,15 +20,15 @@ Perform the following tasks using multiple statements.
 - Retrieve the element with the ID of `partThree` and populate its  innerHTML with the variable `partThree`
 
 ## Part 4 - String Arithmetic
-Perform the following tasks 
+Perform the following tasks
 - Create a variable called `fullName`
 - Give `fullName` a value of `fName` and `lName` joined together with a space.
-    - Use arithmetic to create the value 
+    - Use arithmetic to create the value
 - Populate the element with the ID of `partFour` with the value of `fullName`
 
 ## Part 5 - String Building
 Perform the following tasks
-- Create a variable called `myHtml` and give it an empty string value - "" 
+- Create a variable called `myHtml` and give it an empty string value - ""
 - Add the string "&lt;h2>Title&lt;/h2>"
 - Add the string "&lt;p>Lorem ipsum dolor&lt;/p>"
 - Add the string "&lt;h3>Pellentesque habitant morbi&lt;/h3>"
@@ -36,7 +36,7 @@ Perform the following tasks
 - Output `myHtml` to the element `partFive`
 
 ## Part 6 - If Else Statement
-The variable `part6Number` is going to be populated with a random number between 1 and 100.  Use an `if else` statement to perform the following tasks. 
+The variable `part6Number` is going to be populated with a random number between 1 and 100.  Use an `if else` statement to perform the following tasks.
 - Create a variable called `part6Result`
 - If `part6Number` is greater than 50, populate `part6Result` with 'Above 50'
 - If `part6Number` fails the above test, populate `part6Result` with 'Below or equal to 50'
@@ -44,7 +44,7 @@ The variable `part6Number` is going to be populated with a random number between
 - Output `part6Result` to the element with the id of `part6Result`
 
 ## Part 7 - If, Else If, and Else
-The variable `part7Number` is going to be populated with a random number between 1 and 100.  Use an `if`, `else if` and `else` statement to perform the following tasks. 
+The variable `part7Number` is going to be populated with a random number between 1 and 100.  Use an `if`, `else if` and `else` statement to perform the following tasks.
 - Create a variable called `part7Result`
 - If `part7Number` is less than 25, populate `part7Result` with 'Below 25'
 - If `part7Number` is greater or equal to 25 and less than 50, populate `part7Result` with 'Between 25 and 50'
