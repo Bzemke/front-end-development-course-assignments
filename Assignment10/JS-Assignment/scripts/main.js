@@ -49,7 +49,7 @@ function update() {
     var randomNumber = getValue('randomNumber');
     console.log(randomNumber);
     parseInt(randomNumber);
-    console.log(randomNumber);
+
   ///    document.getElementById('p3_valid').innerHTML = "Invalid";
     if (randomNumber >= 0 || randomNumber < 0){
       document.getElementById('p3_number').innerHTML = randomNumber;
