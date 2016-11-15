@@ -1,22 +1,35 @@
 <!doctype html>
 <html>
 
-    <head>
-        <title>Assignment 12</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
+<head>
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 
-    <body>
-       <section id="message">
+<body>
+    <section id="message">
 
-        </section>
-        <section class="inputs">
-       </section>
-         <section class="control-panel">
-            <input type="button" value="Update Values" id="btnUpdate" />
-        </section>
-        
-        <script src="scripts/main.js"></script>
-    </body>
+    </section>
+
+    <section class="inputs">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+        </br>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+        </br>
+        <input type="text" name="email" id="email" placeholder="Email Address" />
+        </br>
+        <input type="password" name="password" id="password" placeholder="Password" />
+        </br>
+        <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" />
+    </section>
+
+    <section class="control-panel">
+        <!-- <input type="button" value="Update Values" id="btnUpdate" /> -->
+        <input type="button" value="Submit" id="btnSubmit"/>
+        <input type="button" value="Reset" id="btnReset"/>
+    </section>
+
+    <script src="scripts/main.js"></script>
+</body>
 
 </html>
