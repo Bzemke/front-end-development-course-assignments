@@ -1,38 +1,48 @@
-// var messages = []
+firstName.classList.remove('error')
+lastName.classList.remove('error')
+email.classList.remove('error')
+password.classList.remove('error')
+confirm1.classList.remove('error')
+
 
 function submit(){
 
   var messages = []
-  var firstName = getValue('firstName')
+  var fName = getValue('firstName')
   var firstError = ('First Name is required')
-  var lastName = getValue('lastName')
+  var lName = getValue('lastName')
   var lastError = ('Last Name is required')
-  var email = getValue('email')
+  var email1 = getValue('email')
   var emailError = ('Email is invalid')
-  var password = getValue('password')
+  var password1 = getValue('password')
   var passwordError = ('Password field is empty')
-  var confirm = getValue('confirm')
+  var confirm2 = getValue('confirm1')
   var confirmError = ('Passwords do not match')
   var i = 0
   var list = '<ul>'
 
-  if (firstName.length != 0 && lastName.length != 0 && email.length != 0 && email.indexOf('@') > -1 && password.length != 0 && confirm.length != 0){
+  if (fName.length != 0 && lName.length != 0 && email1.length != 0 && email1.indexOf('@') > -1 && password1.length != 0 && confirm2.length != 0){
     alert('Form submitted!')
   }
-  if (firstName.length < 1){
+  if (fName.length < 1){
     messages.push(firstError);
+    firstName.classList.add('error');
   }
-  if (lastName.length < 1){
+  if (lName.length < 1){
     messages.push(lastError);
+    lastName.classList.add('error');
   }
-  if (email.length < 1 || email.indexOf('@') < 0){
+  if (email1.length < 1 || email1.indexOf('@') < 0){
     messages.push(emailError);
+    email.classList.add('error');
   }
-  if (password.length < 1){
+  if (password1.length < 1){
     messages.push(passwordError);
+    password.classList.add('error');
   }
-  if (confirm.length < 1) {
+  if (confirm2.length < 1) {
     messages.push(confirmError);
+    confirm1.classList.add('error');
   }
 
 console.log(messages)
@@ -45,11 +55,17 @@ console.log(messages)
 }
 
 function reset(){
-  document.getElementById('firstName').value = "";
-  document.getElementById('lastName').value = "";
-  document.getElementById('email').value = "";
-  document.getElementById('password').value = "";
-  document.getElementById('confirm').value = "";
+  getElm('firstName').value = "";
+  getElm('lastName').value = "";
+  getElm('email').value = "";
+  getElm('password').value = "";
+  getElm('confirm1').value = "";
+  getElm('message').innerHTML = "";
+  firstName.classList.remove('error');
+  lastName.classList.remove('error');
+  email.classList.remove('error');
+  password.classList.remove('error');
+  confirm1.classList.remove('error');
 }
 
 function getValue(id) {
