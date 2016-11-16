@@ -7,6 +7,12 @@ confirm1.classList.remove('error')
 
 function submit(){
 
+  firstName.classList.remove('error')
+  lastName.classList.remove('error')
+  email.classList.remove('error')
+  password.classList.remove('error')
+  confirm1.classList.remove('error')
+
   var messages = []
   var fName = getValue('firstName')
   var firstError = ('First Name is required')
@@ -44,6 +50,9 @@ function submit(){
     messages.push(confirmError);
     confirm1.classList.add('error');
   }
+  // if (password1.length > 0 && confirm2.length > 0 && (password1.length = confirm2.length) && password1.value === confirm2.value) {
+  //   confirm1.classList.remove('error');
+  // }
 
 console.log(messages)
 
