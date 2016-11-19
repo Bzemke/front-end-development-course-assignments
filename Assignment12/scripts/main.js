@@ -27,7 +27,12 @@ function submit(){
   var i = 0
   var list = '<ul>'
 
-  if (fName.length != 0 && lName.length != 0 && email1.length != 0 && email1.indexOf('@') > -1 && password1.length != 0 && confirm2.length != 0){
+  if (fName.length != 0
+      && lName.length != 0
+      && email1.length != 0
+      && email1.indexOf('@') > -1
+      && password1.length != 0
+      && confirm2.length != 0){
     alert('Form submitted!')
   }
   if (fName.length < 1){
@@ -38,7 +43,8 @@ function submit(){
     messages.push(lastError);
     lastName.classList.add('error');
   }
-  if (email1.length < 1 || email1.indexOf('@') < 0){
+  if (email1.length < 1
+    || email1.indexOf('@') < 0){
     messages.push(emailError);
     email.classList.add('error');
   }
@@ -50,9 +56,13 @@ function submit(){
     messages.push(confirmError);
     confirm1.classList.add('error');
   }
-  // if (password1.length > 0 && confirm2.length > 0 && (password1.length = confirm2.length) && password1.value === confirm2.value) {
-  //   confirm1.classList.remove('error');
-  // }
+  if (password1.value != 0 &&
+      confirm2.value != 0 &&
+      password1.value !== confirm2.value) {
+    messages.push(confirmError)
+    password.classList.add('error')
+    confirm1.classList.add('error')
+  }
 
 console.log(messages)
 
