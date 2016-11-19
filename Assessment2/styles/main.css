@@ -1,3 +1,131 @@
 * {
     box-sizing: border-box;
 }
+
+.banner{
+  color: white;
+  background-color: #a00;
+  padding: 15px;
+}
+
+.banner h1{
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+.banner h2{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  margin: auto;
+  width: 960px;
+}
+
+.bottomNav{
+  background: #999;
+}
+
+.bottomNav a{
+  color: black;
+  font-size: 15px;
+}
+
+.bottomNav a:hover{
+  text-decoration: underline;
+}
+
+.buttons{
+  clear: both;
+  padding: 20px;
+  text-align: center;
+}
+
+.buttons button{
+  font-size: 18px;
+}
+
+.inputs{
+  margin: auto;
+  width: 70%;
+}
+
+.inputFields{
+  padding: 20px;
+}
+
+.inputFields input, .inputFields select{
+  border: 1px solid #a00;
+  color: #a00;
+  float: right;
+  font-size: 18px;
+  padding: 10px;
+  width: 70%;
+}
+
+.inputFields label{
+  float: left;
+  width: 30%;
+}
+
+.mainText{
+  padding: 20px;
+}
+
+.mainText h1{
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.mainText img{
+  float: left;
+}
+
+.mainText p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.terms{
+  margin: auto;
+  padding: 20px;
+}
+
+.terms label{
+  padding: 10px;
+}
+
+.topNav{
+  background-color: maroon;
+}
+
+.topNav, .bottomNav{
+    padding: 10px 20px;
+}
+
+.topNav a{
+  color: white;
+  text-transform: uppercase;
+}
+
+.topNav a, .bottomNav a{
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.topNav a:hover{
+  text-decoration: underline;
+}
+
+.topNav .search{
+  float: right;
+}
