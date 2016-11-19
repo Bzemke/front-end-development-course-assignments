@@ -56,9 +56,11 @@ function submit(){
     messages.push(confirmError);
     confirm1.classList.add('error');
   }
-  if (password1.value != 0 &&
-      confirm2.value != 0 &&
-      password1.value !== confirm2.value) {
+
+
+  if (password1.length != 0 &&
+      confirm2.length != 0 &&
+      password1 !== confirm2) {
     messages.push(confirmError)
     password.classList.add('error')
     confirm1.classList.add('error')
