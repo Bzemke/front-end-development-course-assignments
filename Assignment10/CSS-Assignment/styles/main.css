@@ -5,6 +5,8 @@
 .article1, .article2, .article3{
   border-bottom: 1px solid #a00;
   height: 200px;
+  float: left;
+  width: 66.6666%;
 }
 
 .article1 a:link, .article2 a:link, .article3 a:link{
@@ -26,9 +28,33 @@
 }
 
 body{
+  margin: auto;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18px;
   width: 960px;
+}
+
+.bottomNav{
+  clear: both;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.bottomNav p{
+  float: left;
+}
+
+.bottomNav a{
+  color: #a00;
+  float: right;
+  font-size: 16px;
+  padding: 20px 5px;
+  text-decoration: none;
+}
+
+.bottomNav a:hover{
+  text-decoration: underline;
 }
 
 .sectionHeader{
@@ -79,10 +105,6 @@ body{
   text-decoration: underline;
 }
 
-.posts{
-  width: 66.6666%;
-}
-
 .posts img{
   float: left;
   max-width: 50%;
@@ -96,4 +118,17 @@ body{
 .sideImages{
   float: right;
   width: 33.3333%;
+}
+
+.sponsors{
+  border-left: 1px solid #a00;
+  float: right;
+  height: 590px;
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 30%;
+}
+
+.sponsors img{
+  padding: 10px;
 }
