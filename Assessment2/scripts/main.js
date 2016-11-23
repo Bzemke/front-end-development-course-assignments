@@ -8,14 +8,12 @@ function submit() {
   var fName = getValue('firstName');
   var lName = getValue('lastName');
   var email = getValue('emailAddress');
-  // var find = getValue('find1');
   var need = getValue('need1');
   var list = ('<ul>');
   var i = 0;
   var message = [];
   var accept = ('Thank you for your submission!');
   var agreed = getElm('agree').checked;
-  // var findOption = getElm('find1').value;
   var selector = document.getElementById('find1');
   var dropDown = selector[selector.selectedIndex].value;
 
@@ -31,7 +29,7 @@ if(fName.length != 0 &&
   email.length !=0 &&
   email.indexOf('@') > -1 &&
   email.indexOf('.com') > -1 &&
-  dropDown != 0 &&
+  dropDown !== '0' &&
   need.length != 0)
   {
   document.getElementById('messages').innerHTML = accept;
@@ -60,6 +58,9 @@ if(need.length < 1){
   message.push('Please describe why you need the blender.');
   need1.classList.add('error');
 }
+// if(agreed = 'false'){
+  // message.push('You must accept the terms and conditions.');
+// }
 
 
   console.log(dropDown)
@@ -75,7 +76,7 @@ if(need.length < 1){
 
 function reset() {
   document.getElementById("myForm").reset();
-  // document.getElementById("message").reset();
+  // document.getElementById('messages').reset();
   // var message = [];
   // document.getElementById('messages').innerHTML = "";
 }
