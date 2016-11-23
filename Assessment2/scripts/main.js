@@ -31,7 +31,7 @@ if(fName.length != 0 &&
   email.length !=0 &&
   email.indexOf('@') > -1 &&
   email.indexOf('.com') > -1 &&
-  dropDown.value != 0 &&
+  dropDown != 0 &&
   need.length != 0)
   {
   document.getElementById('messages').innerHTML = accept;
@@ -52,7 +52,7 @@ if(email.length < 1){
   message.push('E-mail address is invalid.');
   emailAddress.classList.add('error');
 }
-if(dropDown.value = "0"){
+if(dropDown === "0"){
   message.push('Please select how you found us.');
   find1.classList.add('error');
 }
