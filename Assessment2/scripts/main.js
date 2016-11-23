@@ -1,26 +1,69 @@
+firstName.classList.remove('error')
+lastName.classList.remove('error')
+emailAddress.classList.remove('error')
+find1.classList.remove('error')
+need1.classList.remove('error')
 
 function submit() {
-  var fName = getValue('firstName')
-  var lName = getValue('lastName')
-  var email = getValue('emailAddress')
-  // var find = getValue('find')
-  var need = getValue('need')
-  var list = ('ul')
-  var i = 0
-  var message = []
-  var accept = ('Thank you for your submission!')
+  var fName = getValue('firstName');
+  var lName = getValue('lastName');
+  var email = getValue('emailAddress');
+  // var find = getValue('find1');
+  var need = getValue('need1');
+  var list = ('<ul>');
+  var i = 0;
+  var message = [];
+  var accept = ('Thank you for your submission!');
+  var agreed = getElm('agree').checked;
+  // var findOption = getElm('find1').value;
+  var selector = document.getElementById('find1');
+  var dropDown = selector[selector.selectedIndex].value;
+
+  firstName.classList.remove('error')
+  lastName.classList.remove('error')
+  emailAddress.classList.remove('error')
+  find1.classList.remove('error')
+  need1.classList.remove('error')
+
 
 if(fName.length != 0 &&
   lName.length != 0 &&
   email.length !=0 &&
   email.indexOf('@') > -1 &&
   email.indexOf('.com') > -1 &&
-  // find.value != " " &&
-  need.length != 0){
+  dropDown.value != 0 &&
+  need.length != 0)
+  {
   document.getElementById('messages').innerHTML = accept;
 }
 
-  console.log(fName)
+if(fName.length < 1){
+  message.push('First name must be filled out.');
+  firstName.classList.add('error');
+}
+if(lName.length < 1){
+  message.push('Last name must be filled out.');
+  lastName.classList.add('error');
+}
+if(email.length < 1){
+  message.push('E-mail address must be filled out.');
+  emailAddress.classList.add('error');
+}else if (email.indexOf('@') < 0 || email.indexOf('.com') < 0){
+  message.push('E-mail address is invalid.');
+  emailAddress.classList.add('error');
+}
+if(dropDown.value = "0"){
+  message.push('Please select how you found us.');
+  find1.classList.add('error');
+}
+if(need.length < 1){
+  message.push('Please describe why you need the blender.');
+  need1.classList.add('error');
+}
+
+
+  console.log(dropDown)
+  console.log(agreed)
 
   for( var i = 0; i < message.length; i++){
     list = list + '<li>' + message[i] + '</li>'
@@ -32,7 +75,9 @@ if(fName.length != 0 &&
 
 function reset() {
   document.getElementById("myForm").reset();
-  document.getElementById('messages').innerHTML = "";
+  // document.getElementById("message").reset();
+  // var message = [];
+  // document.getElementById('messages').innerHTML = "";
 }
 
 function getValue(id) {
@@ -43,3 +88,4 @@ function getElm(id) {
     return document.getElementById(id);
 }
 document.getElementById('btnSubmit').addEventListener('click', submit);
+// document.getElementById('reset').addEventListener('click', reset);

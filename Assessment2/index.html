@@ -36,27 +36,27 @@
           <section class="inputs">
             <div class="inputFields">
               <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName" placeholder="First Name"><br>
+              <input type="text" class="error" name="firstName" id="firstName" placeholder="First Name"><br>
             </div>
             <div class="inputFields">
               <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName" placeholder="Last Name"><br>
+              <input type="text" class="error" name="lastName" id="lastName" placeholder="Last Name"><br>
             </div>
             <div class="inputFields">
               <label for="emailAddress">Email Address</label>
-              <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address"><br>
+              <input type="email" class="error" name="emailAddress" id="emailAddress" placeholder="Email Address"><br>
             </div>
             <div class="inputFields">
-              <label for="find">How did you find us?</label>
-              <select class="dropdown">
-                <option> </option>
-                <option value="Word of mouth">Word of mouth</option>
-                <option value="Facebook">Facebook</option>
+              <label for="find1">How did you find us?</label>
+              <select class="error" name "find1" id="find1">
+                <option value="0" style="display:none;"></option>
+                <option value="1">Word of mouth</option>
+                <option value="2">Facebook</option>
               </select><br>
             </div>
             <div class="inputFields">
-              <label for="need">Why do you need this blender?</label>
-              <input type="text" name="need" id="need" placeholder="Why do you need this?">
+              <label for="need1">Why do you need this blender?</label>
+              <input type="text" name="need1" class="error" id="need1" placeholder="Why do you need this?">
             </div><br>
             <div class="terms">
               <input type="checkbox" name="agree" id="agree">
@@ -64,7 +64,7 @@
           </section>
           <section class="buttons">
             <button id="btnSubmit" type="button">Submit</button>
-            <button type="reset">Reset</button>
+            <button id="reset" type="reset">Reset</button>
           </section>
           <nav class="bottomNav">
             <a href="#">Home</a>

@@ -28,6 +28,12 @@ body{
   width: 960px;
 }
 
+#messages ul{
+  color: red;
+  list-style: none;
+  text-align: center;
+}
+
 .bottomNav{
   background: #999;
 }
@@ -51,12 +57,21 @@ body{
   font-size: 18px;
 }
 
+.error{
+  background-color: red;
+}
+
+.error::-webkit-input-placeholder {
+    color: white;
+}
+
 .inputs{
   margin: auto;
   width: 70%;
 }
 
 .inputFields{
+  color: #a00;
   padding: 20px;
 }
 
