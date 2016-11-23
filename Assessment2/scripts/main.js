@@ -30,7 +30,8 @@ if(fName.length != 0 &&
   email.indexOf('@') > -1 &&
   email.indexOf('.com') > -1 &&
   dropDown !== '0' &&
-  need.length != 0)
+  need.length != 0 &&
+  agreed !== false)
   {
   document.getElementById('messages').innerHTML = accept;
 }
@@ -58,9 +59,9 @@ if(need.length < 1){
   message.push('Please describe why you need the blender.');
   need1.classList.add('error');
 }
-// if(agreed = 'false'){
-  // message.push('You must accept the terms and conditions.');
-// }
+if(agreed !== true){
+  message.push('You must accept the terms and conditions.');
+}
 
 
   console.log(dropDown)
