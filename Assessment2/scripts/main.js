@@ -90,4 +90,4 @@ function getElm(id) {
     return document.getElementById(id);
 }
 document.getElementById('btnSubmit').addEventListener('click', submit);
-// document.getElementById('reset').addEventListener('click', reset);
+// document.getElementById('btnReset').addEventListener('click', reset);
