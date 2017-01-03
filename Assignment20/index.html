@@ -1,24 +1,67 @@
 <!doctype html>
 <html>
 
-    <head>
-        <title>Assignment 18</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
+  <head>
+      <title>Assignment 20</title>
+      <link rel="stylesheet" href="styles/main.css">
+  </head>
 
-    <body>
-        <div class="fl">
-            <h2>Append</h2>
-            <ul id="append">
-            </ul>
-        </div>
-        <div class="fl">
-            <h2>Prepend</h2>
-            <ul id="prepend">
-            </ul>
-        </div>
+  <body>
+
+    <header>
+      <a><img src="http://placehold.it/350x100" alt="Placeholder image"></a>
+    </header>
+
+    <nav class = navigation>
+      <a href="#">Home</a>
+      <a href="#">Q & A</a>
+      <a class = icons href="https://www.twitter.com/HalluxInc/" target="_blank"><img title= "Twitter" alt="Twitter" src="C:\Users\Brett Zemke\Documents\Twitter icon.jpg" height="50" width ="50"></a>
+      <a class = icons href="https://www.facebook.com/HalluxInc/" target="_blank"><img title= "Facebook" alt="Facebook" src="C:\Users\Brett Zemke\Documents\Facebook icon.jpg" height="50" width ="50"></a>
+    </nav>
+
+    <div class ="questionBox">
+      <div class ="question">
+        <h2>Question Title</h2>
+        <p>Question body.  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+      </div>
+      <div class="askedBy">
+        <p>Asked by:
+        <br>
+        <a><img src="images/skyrimAvatar.png" alt="Avatar Image"></a>John Doe</p>
+      </div>
+    </div>
+
+    <div class="answers">
+      <p>Pellentesque habitant morbi tristique sensctus et netus et malesuada fames ac turpis egestas.
+        <br>
+      <a><img src="images/skyrimAvatar.png" alt="Avatar Image"></a>John Doe</p>
+      <p>Pellentesque habitant morbi tristique sensctus et netus et malesuada fames ac turpis egestas.
+        <br>
+      <a><img src="images/skyrimAvatar.png" alt="Avatar Image"></a>Jimmy Doe</p>
+      <p>Pellentesque habitant morbi tristique sensctus et netus et malesuada fames ac turpis egestas.
+        <br>
+      <a><img src="images/skyrimAvatar.png" alt="Avatar Image"></a>Jane Doe</p>
+    </div>
+
+    <div class="activityLog">
+      <h2>Activity Log</h2>
+      <ul>
+        <li>John Doe responded</li>
+        <li>Jane Doe responded</li>
+        <li>Jimmy Doe responded</li>
+        <li> John Doe responded</li>
+    </div>
+
+    <div class="submitAnswer">
+      <h3>Submit your answer<br><br><br>Your Name</h3>
+      <input type="text" name="Your Name" value="" id="yourName">
+      <h3>Your Answer</h3>
+      <input type="textarea" name="Your Answer" value="" id="yourAnswer">
+    <div>
+
+
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="scripts/main.js"></script>
-    </body>
+  </body>
 
 </html>

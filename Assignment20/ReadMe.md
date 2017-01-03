@@ -38,7 +38,7 @@ Your UX and creative team has provided you a set of wire frames that defines the
 
 # Interactive Requirements
 - Answer Form
-  - Both inputs should validate and show errors when the element looses focus (blur event) or when the user tries to submit the form.
+  - Both inputs should validate and show errors when the element loses focus (blur event) or when the user tries to submit the form.
 
 - Invalid Form Behavior
   - The inputs should get a red border around them
@@ -55,4 +55,3 @@ Your UX and creative team has provided you a set of wire frames that defines the
 - Optional: The backend team is expected to come in and setup all of the ajax requests.  Try to impress them and do the following.
   - Mock out a get ajax request on page load to get all the answers.
   - Mock out a post ajax request when the form is submitted.
-

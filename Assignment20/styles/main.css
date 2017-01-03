@@ -2,3 +2,86 @@
     box-sizing: border-box;
 }
 
+.activityLog{
+  float: right;
+  width: 25%;
+}
+
+.answers{
+  float: left;
+  width: 70%;
+}
+
+.answers p{
+  border: 1px solid #5a5a5a;
+}
+
+.answers img{
+  height: 101px;
+}
+
+.askedBy{
+
+}
+
+.askedBy img{
+  height: 101px;
+}
+
+body{
+  display: block;
+  margin: auto;
+  width: 960px;
+}
+
+html{
+  color: #5a5a5a;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+h2{
+  color: #620010;
+}
+
+h3{
+  color: #620010;
+}
+
+.icons{
+  text-decoration: none;
+}
+
+.navigation{
+  background-color: #aa0000;
+}
+
+.navigation a{
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover{
+  text-decoration: underline;
+}
+
+.submitAnswer{
+  clear: both;
+  padding-top: 25px;
+}
+
+.question{
+  float: left;
+  width: 70%;
+}
+
+.questionBox{
+  border-color: #5a5a5a;
+  border-bottom: 1px;
+  border-top: 1px;
+  border-style: solid;
+}
+
+#yourAnswer{
+  height: 200px;
+  width: 70%;
+}
