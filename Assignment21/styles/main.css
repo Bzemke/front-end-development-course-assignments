@@ -6,6 +6,36 @@
     margin:20px auto;
 }
 
+@media screen and (max-width:500px){
+  body{
+    color:blue;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width:800px) {
+  p{
+    background-color: grey;
+  }
+}
+
+@media screen and (min-width:960px) {
+    ol{
+      font-size: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+  .main-content{
+    width:100%;
+  }
+
+  .fl, .fr{
+    /*clear: both;*/
+    float: none;
+    width: 100%;
+  }
+}
+
 .fl{
     float:left;
     width:50%;
@@ -15,4 +45,3 @@
     float:right;
     width:50%;
 }
-
