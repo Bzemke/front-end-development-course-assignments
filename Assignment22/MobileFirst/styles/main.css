@@ -18,7 +18,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 a {
@@ -35,7 +35,7 @@ a:hover {
 }
 
 .main-header {
-    margin: 10px 0
+    margin: 10px 0;
 }
 
 .main-header nav {
@@ -46,17 +46,17 @@ a:hover {
     color: #fff;
     display: block;
     font-size: 24px;
-    padding: 5px 15px
+    padding: 5px 15px;
 }
 
 .hero img {
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 section {
     clear: both;
-    margin: 10px auto
+    margin: 10px auto;
 }
 
 section .section-header {
@@ -64,7 +64,7 @@ section .section-header {
     border: 1px solid #a00;
     border-left: none;
     border-right: none;
-    text-align: center
+    text-align: center;
 }
 
 section .article-list {
@@ -73,13 +73,14 @@ section .article-list {
 }
 
 .article-list article {
-    border-bottom: 1px solid #a00
+    border-bottom: 1px solid #a00;
 }
 
 .article-list article img {
     display: block;
     width: 100%;
-    padding: 10px
+    padding: 10px;
+    /*max-width: 350px;*/
 }
 
 section>aside {}
@@ -91,16 +92,16 @@ section>aside {}
 .sponsors>.sponsor-ads>img {
     width: 50%;
     float: left;
-    padding: 10px
+    padding: 10px;
 }
 
 footer {
     clear: both;
-    padding: 20px 0
+    padding: 20px 0;
 }
 
 footer>h3 {
-    margin: 0
+    margin: 0;
 }
 
 footer>nav {
@@ -110,3 +111,97 @@ footer>nav>a {
     padding: 0 10px;
     display:block;
 }
+
+@media screen and (min-width:480px){
+  .article-list article{
+    clear: both;
+    overflow: hidden;
+  }
+  .article-list img{
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:620px){
+  .main-header nav a,
+  footer>nav>a{
+    display: inline-block;
+  }
+  .main-header nav{
+    border-radius: 50px;
+  }
+  .main-header nav,
+  footer{
+    text-align: center;
+  }
+  .sponsor-ads>img{
+    width: 100%;
+  }
+  .article-list{
+    float: left;
+    width: 75%;
+    overflow: hidden;
+  }
+  section aside{
+    float: right;
+    overflow: hidden;
+    width: 24%;
+  }
+  .hero{
+    text-align: center;
+  }
+  .hero img{
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width:960px){
+  .article-list{
+    width: 66%;
+  }
+  section aside{
+    width: 33%;
+  }
+  .main-container{
+    max-width: 960px;
+  }
+  .sponsor-ads>img{
+    width: 50%;
+  }
+  footer nav{
+    text-align: right;
+  }
+  .article-list article img{
+    max-width: 350px;
+  }
+  .sponsor-ads>img{
+    max-width: 150px;
+  }
+
+
+}
+
+/*@media screen and (min-width:960px){
+  body{
+    margin: auto;
+    width: 960px;
+  }
+  .hero{
+    max-width: 620px;
+    margin: auto;
+  }
+
+  .main-header nav{
+    border-radius: 50px;
+  }
+  .main-header nav a{
+    display: inline-block;
+  }
+  .article-list img{*/
+    /*max-width: 350px;*/
+  /*}*/
+  /*.article-list header{*/
+/**/
+  /*}*/
+/*}*/
