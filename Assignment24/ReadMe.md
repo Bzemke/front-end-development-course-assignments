@@ -3,7 +3,7 @@
 We have covered some of the essentials around responsive websites and the Bootstrap framework.  It's time to take what you have learned and apply them to some custom work.
 
 Build a responsive mobile first grid based framework that will meet the following requirements.
-- Must have at these 2 resolution media queries 
+- Must have at these 2 resolution media queries
   - min-width 768
   - min-width 992
 - The framework must be able to accommodate the  two wireframes at the bottom of this page.
@@ -20,3 +20,5 @@ Build a responsive mobile first grid based framework that will meet the followin
 
 ![scenario1](generic-site.jpg)
 ![scenario2](news-article.jpg)
+
+Need a 2, 3, and 4 column layout with an img-responsive hero callout.

@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.cell{
+  background: lightgrey;
+  border: 1px solid black;
+}
+
+
+/*
+  Rows - .row
+  Columns - .col
+  Tablet - .md-25
+           .md-33
+           .md-50
+           .md-66
+           .md-75
+*/
+
+@media screen and (min-width:768px){
+  .col{
+    float: left;
+  }
+  .row{
+    clear: both;
+    overflow: hidden;
+  }
+  .md-25{
+    width: 25%;
+  }
+  .md-33{
+    width: 33%;
+  }
+  .md-50{
+    width: 50%;
+  }
+  .md-66{
+    width: 66%;
+  }
+  .md-75{
+    width: 75%;
+  }
+}
