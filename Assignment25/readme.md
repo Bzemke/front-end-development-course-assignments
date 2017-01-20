@@ -3,7 +3,7 @@ Using the examples in the presentation perform the following tasks.
 
 ## Custom Navs
 Create an index.html  and build a custom navigation that meets the following requirements.
- 
+
 - Must contain at least 6 links.
 - Must have at least 1 drop down menu.  Use the jsfiddle in the presentation to create this.
 - Must remain at the top of the page as you scroll.
