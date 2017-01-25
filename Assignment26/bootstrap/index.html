@@ -13,10 +13,10 @@
         <p>
             There is wire up the button below this paragraph to show the modal with the id of "mdlFirstModal"
         </p>
-        <button class="btn btn-primary">Show Modal</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdlFirstModal">Show Modal</button>
         <!-- Modal -->
         <div class="modal fade" id="mdlFirstModal">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
                         I don't have any specific content, but I just want to show up on the screen
@@ -32,17 +32,27 @@
             <li>Remove the fade effect</li>
             <li>Add a class to make the modal small</li>
             <li>Add a footer</li>
-            <li>Add a heder</li>
+            <li>Add a header</li>
         </ol>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#secondModal">Second modal</button>
-        <div class="modal fade" id="secondModal"        >
-            <div class="modal-dialog" >
+        <div class="modal" id="secondModal">
+            <div class="modal-dialog modal-sm">
+
                 <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Header</h4>
+                    </div>
+
                     <div class="modal-body">
                         I want to be a small modal with no animations... and I want a header and footer.
                     </div>
- 
+
+                    <div class="modal-footer">
+                      <h4>Footer</h4>
+                    </div>
+
                 </div>
+
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
