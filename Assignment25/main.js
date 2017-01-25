@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function (){
 
-  $('.dropdown-collapse-toggle').on('click', function(){
+  $('.mobile-collapse-toggle').on('click', function(){
     $('.navigation').toggle
   }
 
