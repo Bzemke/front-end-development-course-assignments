@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+article p{
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*Copied body color from msn.com*/
+
+body{
+  background-color: #d5d4d0;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+li,
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul{
+  list-style: none;
+}
+
+.drop-down .drop-down-content {
+  display: none;
+  background: #51a9e8;
+}
+
+h1,
+h2,
+h3{
+  color: #fff;
+  text-align: center;
+}
+
+header{
+  background-color: #51a9e8;
+  max-width: 1440px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.hero{
+  margin: auto;
+  margin-top: 38px;
+  padding: 20px 0px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.hero img{
+  display: block;
+  margin: auto;
+}
+
+.main-content{
+    background-color: #0d64a3;
+    margin: auto;
+}
+
+.mobile-collapse{
+  display: none;
+}
+
+nav a{
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover{
+  background-color: #93d2ff;
+}
+
+.navBar{
+  background-color: #51a9e8;
+}
+
+.navBar button{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+@media screen and (min-width:768px) {
+    header {
+        background: #51a9e8;
+    }
+    header nav {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    nav ul {
+        float: right;
+    }
+    nav li {
+        display: inline-block;
+    }
+    .navBar {
+        float: left;
+    }
+    .navBar button {
+        display: none;
+    }
+    .mobile-collapse {
+        display: block !important;
+    }
+    .drop-down .drop-down-content {
+        position: absolute;
+    }
+}
