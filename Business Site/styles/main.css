@@ -34,9 +34,50 @@ ul{
   list-style: none;
 }
 
+.copyright{
+  text-align: right;
+}
+
+.disclaimer{
+  text-align: left;
+}
+
 .drop-down .drop-down-content {
   display: none;
   background: #51a9e8;
+}
+
+.faq-content{
+  padding-top: 30px;
+}
+
+.faq-content h3{
+  border-top: 2px solid #fff;
+  padding: 20px;
+}
+
+.faq-content p{
+  border-bottom: 2px solid #fff;
+}
+
+footer{
+  background-color: #51a9e8;
+  color: #fff;
+  max-width: 1440px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container{
+  width: 100%;
+  white-space: nowrap;
+}
+
+.footer-container div{
+  display: inline-block;
+  padding: 10px 0px;
+  width: 50%;
 }
 
 h1,
@@ -67,8 +108,13 @@ header{
   margin: auto;
 }
 
+.automotive-content,
+.electronics-content,
+.farm-content,
+.faq-content,
 .main-content{
-    background-color: #0d64a3;
+    /*background-color: #0d64a3;*/
+    background: linear-gradient(to right, #023356, #128fe8);
     margin: auto;
 }
 
