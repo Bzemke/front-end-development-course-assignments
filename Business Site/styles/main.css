@@ -13,25 +13,45 @@ article p{
   text-align: center;
 }
 
-/*Copied body color from msn.com*/
+.automotive-content, .electronics-content, .farm-content{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  /*padding: 50px 0px;*/
+  padding: 0px;
+  padding-top: 50px;
+}
+
+.article-header{
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+}
+
+.automotive-content img, .electronics-content img, .farm-content img{
+  display: flex;
+  height: 150px;
+  width: 200px;
+  margin: auto;
+}
 
 body{
-  background-color: #d5d4d0;
+  background-color: black;
+  height: auto;
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
 }
 
 li,
 ul{
+  list-style: none;
   margin: 0;
   padding: 0;
-}
-
-li,
-ul{
-  list-style: none;
 }
 
 .copyright{
@@ -48,7 +68,7 @@ ul{
 }
 
 .faq-content{
-  padding-top: 30px;
+  padding: 30px 0px;
 }
 
 .faq-content h3{
@@ -76,7 +96,7 @@ footer{
 
 .footer-container div{
   display: inline-block;
-  padding: 10px 0px;
+  padding: 10px;
   width: 50%;
 }
 
@@ -108,14 +128,19 @@ header{
   margin: auto;
 }
 
+html{
+  height: 100;
+}
+
 .automotive-content,
 .electronics-content,
 .farm-content,
 .faq-content,
-.main-content{
-    /*background-color: #0d64a3;*/
+.main-content,
+.welcome{
     background: linear-gradient(to right, #023356, #128fe8);
-    margin: auto;
+    height: 100%;
+    /*margin: auto;*/
 }
 
 .mobile-collapse{
@@ -146,11 +171,13 @@ nav a:hover{
   top: 10px;
 }
 
+@media screen and (min-width:480px){
+  .product{
+    flex-basis: 50%;
+  }
+}
 
-@media screen and (min-width:768px) {
-    header {
-        background: #51a9e8;
-    }
+@media screen and (min-width:720px) {
     header nav {
         max-width: 1440px;
         margin: 0 auto;
@@ -172,5 +199,8 @@ nav a:hover{
     }
     .drop-down .drop-down-content {
         position: absolute;
+    }
+    .product{
+    flex-basis:33%;
     }
 }
